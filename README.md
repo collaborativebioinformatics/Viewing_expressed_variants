@@ -46,31 +46,36 @@ _VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file_
 ![](pictures/workflow_charts.png)
 
 ## Implementation (codes)
-### (step 1). Preparing the sample files:<br/>
-**1. (code purpose description): **<br/>
+
+#### (step 1) Preparing the sample files:<br/>
+**1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-### (step 2). Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
-**1. (code purpose description): **<br/>
+
+#### (step 2) Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
+**1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-### (step 3). Focusing on pathogenic variants only (Sara & Varuna):<br/>
-**1. (code purpose description): **<br/>
+
+#### (step 3) Focusing on pathogenic variants only (Sara & Varuna):<br/>
+**1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-### (step 4). Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
-**1. (code purpose description): **<br/>
+
+#### (step 4) Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+**1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-### (step 5). Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
+
+#### (step 5) Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
 **1. Molecular mechanisms:**<br/>
 ```
 (codes)
@@ -80,8 +85,10 @@ _VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file_
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-### (step 6). Results integratiion (Kevin):<br/>
+
+#### (step 6). Results integratiion (Kevin):<br/>
 _PS. Two results short list for clinician<br/>_
+
 **1. Showing Top 5 important variants/ associated pathways:**<br/>
 ```
 (codes)
@@ -91,7 +98,7 @@ _PS. Two results short list for clinician<br/>_
 (codes)
 ```
 ----------//-------------//---------------------
-### (step 7). Visualization (Ankita, Jason & Anukrati):<br/>
+#### (step 7). Visualization (Ankita, Jason & Anukrati):<br/>
 **1. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
 ```
 (codes)
@@ -103,7 +110,7 @@ _PS. Two results short list for clinician<br/>_
 ----------//-------------//---------------------<br/>
 
 ## Example outputs & results
-**1. results pictures:**<br/>
+**1. Figures & Tables:**<br/>
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
 

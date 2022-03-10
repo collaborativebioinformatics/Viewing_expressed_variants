@@ -44,6 +44,7 @@ _(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
 ```
 **2.** Software Requirements
+
 The following expression variants analysis tools have been installed:
 ```
 R version 4.0.4 (2021-02-15) -- "Lost Library Book"
@@ -56,7 +57,7 @@ dplyr: 1.0.7
 tidyr: 1.1.4
 magrittr: 2.0.2
 STAR: 2.7.9a
-rWikiPathways
+rWikiPathways 1.10.0
 
 ```
 

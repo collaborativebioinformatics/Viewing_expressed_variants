@@ -1,5 +1,6 @@
 # Viewing_expressed_variants
 
+
 ## Contributors 
 -  Kevin Elaba, Ankita Murmu, Rajarshi Mondal, Anukrati Nigam, ChunHsuan LO (Jason) - **Sysadmin** 
 -  Ahmad Khleifat, Olaitan Awe, Varuna Chander - **Tech support**
@@ -9,17 +10,22 @@
 -  Yejie Yun, Rajarshi Mondal, Ankita Murmu, Olaitan I. Awe, ChunHsuan LO (Jason) - **Github maintenance**
 -  ChunHsuan LO (Jason) - **Lead, Liaison** 
 
+
 ## Goal 
 To visualize the expression profiles and pathways associated with variants for suggesting clinical therapy target & drug usage.
+
 
 ## Introduction 
 (Describe)
 
+
 ## Idea Outlines
 ![](pictures/idea_outlines.png)
 
-## Example test Data 
+
+## Example Data 
 (Describe)
+
 
 ## Installation & environments setup
 **1.** Install the package
@@ -37,45 +43,44 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 _VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file_
 1. Expressed variants (VCF files from RNA seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
+
 ### Outputs:
 1. figures. (Overlapping SNV site to Expression level - read coverage, distribution of pathogenic variants, which genes have the highest overlap for pathogenic variants, circular-omic plot of overlap of structural variants) 
 2. Table for statistics. (Fot those annotation recorded by the VCF files.) 
 3. Gene ontology analysis. (for the expressed variants.) & Pathway analysis & KEGG 
 4. To suggest clinical therapy target & drug usage.
+
 ### Detailed flow charts:
 ![](pictures/workflow_charts.png)
 
+
 ## Implementation (codes)
 
-#### (step 1) Preparing the sample files:<br/>
+### (step 1) Preparing the sample files:<br/>
 **1.**<br/>
 ```
 (codes)
 ```
-----------//-------------//---------------------<br/>
 
-#### (step 2) Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
+### (step 2) Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
-----------//-------------//---------------------<br/>
 
-#### (step 3) Focusing on pathogenic variants only (Sara & Varuna):<br/>
+### (step 3) Focusing on pathogenic variants only (Sara & Varuna):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
-----------//-------------//---------------------<br/>
 
-#### (step 4) Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+### (step 4) Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
-----------//-------------//---------------------<br/>
 
-#### (step 5) Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
+### (step 5) Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
 **1. Molecular mechanisms:**<br/>
 ```
 (codes)
@@ -84,9 +89,8 @@ _VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file_
 ```
 (codes)
 ```
-----------//-------------//---------------------<br/>
 
-#### (step 6). Results integratiion (Kevin):<br/>
+### (step 6) Results integratiion (Kevin):<br/>
 _PS. Two results short list for clinician<br/>_
 
 **1. Showing Top 5 important variants/ associated pathways:**<br/>
@@ -97,8 +101,8 @@ _PS. Two results short list for clinician<br/>_
 ```
 (codes)
 ```
-----------//-------------//---------------------
-#### (step 7). Visualization (Ankita, Jason & Anukrati):<br/>
+
+### (step 7) Visualization (Ankita, Jason & Anukrati):<br/>
 **1. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
 ```
 (codes)
@@ -107,12 +111,13 @@ _PS. Two results short list for clinician<br/>_
 ```
 (codes)
 ```
-----------//-------------//---------------------<br/>
 
-## Example outputs & results
+
+## Example Data outputs & results
 **1. Figures & Tables:**<br/>
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
+
 
 ## References 
 - Data: https://XXX

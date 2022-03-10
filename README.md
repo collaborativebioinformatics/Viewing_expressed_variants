@@ -12,7 +12,7 @@
 
 
 ## Goal
-To visualize the expression profiles and pathways associated with variants for suggesting clinical therapy target & drug usage.
+To visualize the expression profiles and pathways associated with pathogenic variants for suggesting clinical therapy target and drug usage for Colorectal Cancer.
 
 
 ## Introduction
@@ -48,7 +48,7 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 
 ### Inputs:
 _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam file_
-1. Expressed variants (VCF files from RNA seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
+1. Expressed variants (VCF files from RNA-seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 
 ### Outputs:

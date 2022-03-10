@@ -86,13 +86,11 @@ singularity exec expressed_variants.sif R <path_to_Rscript>
 ### Inputs:
 _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam file_
 1. Expressed variants (VCF files from RNA-seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
-2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 
 ### Outputs:
 1. Summary statistics of expressed variants and pathogenic variants.
-2. Tables: Statistics for those annotation recorded by the VCF files.
-3. Gene ontology and KEGG Pathway analysis for the expressed pathogenic variants.
-4. Potential clinical targets.
+2. Gene ontology and KEGG Pathway analysis for the expressed pathogenic variants.
+3. Potential clinical targets.
 
 ### Detailed flow charts:
 ![](pictures/workflow_charts_00.png)

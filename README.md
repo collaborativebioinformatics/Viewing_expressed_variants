@@ -61,7 +61,7 @@ rWikiPathways 1.10.0
 
 A singularity container was built to run the pipeline. The recipe file (expressed_variants.def) will be available this Git repository.
 
-To build the container on your unix environment, do:
+To build the singularity container on your unix environment, do:
 ```
 singularity build expressed_variants.sif expressed_variants.def
 ```

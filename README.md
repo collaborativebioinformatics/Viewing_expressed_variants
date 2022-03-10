@@ -24,15 +24,19 @@ To visualize the expression profiles and pathways associated with pathogenic var
 
 
 ## Example Data
-_(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_
+_(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_  <br/>
+OR  <br/>
+_(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 -  testSample.cancer.tab <br/>
 -  testSample.cancer.vcf <br/>
 -  testv25.variants.HC_hard_cutoffs_applied.cancer.tab <br/>
 -  testv25.variants.HC_hard_cutoff_applied.cancer.vcf <br/>
-OR<br/>
-_(Provided by: https://portal.gdc.cancer.gov/)_
+OR <br/>
 -  TCGA-44-6164 (case ID) <br/>
 ![](pictures/Example_data.png)
+-- https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22content%22%3A%7B%22field%22%3A%22cases.case_id%22%2C%22value%22%3A%5B%220c0b610e-fe4c-406d-a5ed-5cc3b11dabf5%22%5D%7D%2C%22op%22%3A%22in%22%7D%5D%7D&searchTableTab=files <br/>
+-- https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22content%22%3A%7B%22field%22%3A%22cases.case_id%22%2C%22value%22%3A%5B%220c0b610e-fe4c-406d-a5ed-5cc3b11dabf5%22%5D%7D%2C%22op%22%3A%22in%22%7D%5D%7D&searchTableTab=files
+
 
 ## Installation
 **1.** Install the package
@@ -94,23 +98,21 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 (codes)
 ```
 
-### (step 4) Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+### (step 4) Gene ontology and pathway analysis for pathogenic variants & genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
-
-### (step 5) Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
-**1. Molecular mechanisms:**<br/>
+**2. Molecular mechanisms:**<br/>
 ```
 (codes)
 ```
-**2. Identification of druggable target:**<br/>
+**3. Identification of druggable target:**<br/>
 ```
 (codes)
 ```
 
-### (step 6) Results integration (Kevin):<br/>
+### (step 5) Results integration (Kevin):<br/>
 _PS. Two results short list for clinician<br/>_
 
 **1. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
@@ -122,7 +124,7 @@ _PS. Two results short list for clinician<br/>_
 (codes)
 ```
 
-### (step 7) Visualization (Ankita, Jason & Anukrati):<br/>
+### (step 6) Visualization (Ankita, Jason & Anukrati):<br/>
 **1. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
 ```
 (codes)
@@ -147,4 +149,4 @@ For use by https://github.com/collaborativebioinformatics/Viewing_expressed_vari
 - https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic
 - https://github.com/collaborativebioinformatics/snpReportR
 - https://github.com/collaborativebioinformatics/Differential_Expression_and_Variant_Association
-- https://github.com/collaborativebioinformatics/DeepExpression (might be useful for both projects)
+- https://github.com/collaborativebioinformatics/DeepExpression

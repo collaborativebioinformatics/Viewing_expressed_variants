@@ -46,7 +46,7 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 **2.** Software Requirements
 The following software tools are needed in a Unix environment in order to do the analysis.
 ```
-R
+R Bioconductor
 ggplot2
 ggradar
 gridExtra
@@ -54,7 +54,7 @@ ggpubr
 dplyr
 tidyr
 magrittr
-Others
+
 ```
 
 **3.** setting up the environments

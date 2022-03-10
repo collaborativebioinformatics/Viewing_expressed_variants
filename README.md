@@ -32,7 +32,7 @@ _(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNP
 <br/>
 OR<br/>
 <br/>
-_(Provided by: https://portal.gdc.cancer.gov/)_
+_(Provided by: https://portal.gdc.cancer.gov/)_<br/>
 -  TCGA-44-6164 (case ID) <br/>
 ![](pictures/Example_data.png)
 

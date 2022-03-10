@@ -18,7 +18,7 @@ To visualize the expression profiles and pathways associated with variants for s
 ## Idea Outlines
 ![](pictures/idea_outlines.png)
 
-## Test Data 
+## Example test Data 
 (Describe)
 
 ## Installation & environments setup
@@ -33,82 +33,76 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 
 ## Methods
 
-### Inputs 
+### Inputs:
 **VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file**
 1. Expressed variants (VCF files from RNA seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
-### Outputs 
+### Outputs:
 1. figures. (Overlapping SNV site to Expression level - read coverage, distribution of pathogenic variants, which genes have the highest overlap for pathogenic variants, circular-omic plot of overlap of structural variants) 
 2. Table for statistics. (Fot those annotation recorded by the VCF files.) 
 3. Gene ontology analysis. (for the expressed variants.) & Pathway analysis & KEGG 
 4. To suggest clinical therapy target & drug usage.
-
-### Detailed flow charts
+### Detailed flow charts:
 ![](pictures/workflow_charts.png)
 
-#### Implementation 
-I. Preparing the sample files:
-**1.**
+## Implementation (codes)
+I. Preparing the sample files:<br/>
+**1.**<br/>
+```
+(codes)
+```
+----------//-------------//---------------------<br/>
+II. Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
+**1.**<br/>
+```
+(codes)
+```
+----------//-------------//---------------------<br/>
+III. Focusing on pathogenic variants only (Sara & Varuna):<br/>
+**1.**<br/>
+```
+(codes)
+```
+----------//-------------//---------------------<br/>
+IV. Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+**1.**<br/>
+```
+(codes)
+```
+----------//-------------//---------------------<br/>
+V. Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
+**1.** Molecular mechanisms:<br/>
+```
+(codes)
+```
+**2.** Identification of druggable target:<br/>
+```
+(codes)
+```
+----------//-------------//---------------------<br/>
+VI. Results integratiion (Kevin):<br/>
+PS. Two results short list for clinician<br/>
+**1.** Top 5 important variants/ associated pathways:<br/>
+```
+(codes)
+```
+**2.** Broader list for researchers:<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------
-II. Data cleaning for Vcf files or tabulated files as input (Sara):
-**1.**
+VII. Visualization (Ankita, Jason & Anukrati):<br/>
+**1.** Visualization of facts about each expressed variant: what genes/pathways it affects:<br/>
 ```
 (codes)
 ```
-----------//-------------//---------------------
+**2.** Visualization of genome tracks where variants located:<br/>
+```
+(codes)
+```
+----------//-------------//---------------------<br/>
 
-III. Focusing on pathogenic variants only (Sara & Varuna):
-**1.**
-```
-(codes)
-```
-----------//-------------//---------------------
-
-IV. Pathway analysis for pathogenic variants & genes (Olaitan & Sara):
-**1.**
-```
-(codes)
-```
-----------//-------------//---------------------
-
-V. Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):
-**1.** Molecular mechanisms:
-```
-(codes)
-```
-**2.** Identification of druggable target:
-```
-(codes)
-```
-----------//-------------//---------------------
-
-VI. Results integratiion (Kevin):
-Two results short list for clinician
-**1.** Top 5 important variants/ associated pathways:
-```
-(codes)
-```
-**2.** Broader list for researchers:
-```
-(codes)
-```
-----------//-------------//---------------------
-
-VII. Visualization (Ankita, Jason & Anukrati):
-**1.** Visualization of facts about each expressed variant: what genes/pathways it affects:
-```
-(codes)
-```
-**2.** Visualization of genome tracks where variants located:
-```
-(codes)
-```
-----------//-------------//---------------------
-
-####Example outputs
+##Example outputs & results
 1. results pictures:
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants

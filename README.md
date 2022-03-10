@@ -45,7 +45,7 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 ```
 **2.** Software Requirements
 
-The following expression variants analysis tools have been installed in this container:
+The following expression variants analysis tools have been installed in this singularity container:
 
 ```
 R version 4.0.4 (2021-02-15) -- "Lost Library Book"
@@ -177,7 +177,7 @@ For use by https://github.com/collaborativebioinformatics/Viewing_expressed_vari
 
 
 ## References
-- Data: 
+- Data:
 - GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows
 - DNANexus documentation https://documentation.dnanexus.com/developer/apps/execution-environment/connecting-to-jobs
 - https://github.com/collaborativebioinformatics/omics_clinical_reporting

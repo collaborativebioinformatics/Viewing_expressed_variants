@@ -34,7 +34,7 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 ## Methods
 
 ### Inputs:
-**VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file**
+_VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file_
 1. Expressed variants (VCF files from RNA seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 ### Outputs:
@@ -46,64 +46,64 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 ![](pictures/workflow_charts.png)
 
 ## Implementation (codes)
-#### I. Preparing the sample files:<br/>
-**1.**<br/>
+### (step 1). Preparing the sample files:<br/>
+**1. (code purpose description): **<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-#### II. Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
-**1.**<br/>
+### (step 2). Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
+**1. (code purpose description): **<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-#### III. Focusing on pathogenic variants only (Sara & Varuna):<br/>
-**1.**<br/>
+### (step 3). Focusing on pathogenic variants only (Sara & Varuna):<br/>
+**1. (code purpose description): **<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-#### IV. Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
-**1.**<br/>
+### (step 4). Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+**1. (code purpose description): **<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-#### V. Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
-**1.** Molecular mechanisms:<br/>
+### (step 5). Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
+**1. Molecular mechanisms:**<br/>
 ```
 (codes)
 ```
-**2.** Identification of druggable target:<br/>
+**2. Identification of druggable target:**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-#### VI. Results integratiion (Kevin):<br/>
-PS. Two results short list for clinician<br/>
-**1.** Top 5 important variants/ associated pathways:<br/>
+### (step 6). Results integratiion (Kevin):<br/>
+_PS. Two results short list for clinician<br/>_
+**1. Showing Top 5 important variants/ associated pathways:**<br/>
 ```
 (codes)
 ```
-**2.** Broader list for researchers:<br/>
+**2. Broader list for researchers:**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------
-#### VII. Visualization (Ankita, Jason & Anukrati):<br/>
-**1.** Visualization of facts about each expressed variant: what genes/pathways it affects:<br/>
+### (step 7). Visualization (Ankita, Jason & Anukrati):<br/>
+**1. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
 ```
 (codes)
 ```
-**2.** Visualization of genome tracks where variants located:<br/>
+**2. Visualization of genome tracks where variants located:**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
 
 ## Example outputs & results
-1. results pictures:<br/>
+**1. results pictures:**<br/>
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
 

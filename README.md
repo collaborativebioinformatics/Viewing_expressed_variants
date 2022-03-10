@@ -85,23 +85,21 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 (codes)
 ```
 
-### (step 4) Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+### (step 4) Gene ontology and pathway analysis for pathogenic variants & genes-molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
-
-### (step 5) Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
-**1. Molecular mechanisms:**<br/>
+**2. Molecular mechanisms:**<br/>
 ```
 (codes)
 ```
-**2. Identification of druggable target:**<br/>
+**3. Identification of druggable target:**<br/>
 ```
 (codes)
 ```
 
-### (step 6) Results integration (Kevin):<br/>
+### (step 5) Results integration (Kevin):<br/>
 _PS. Two results short list for clinician<br/>_
 
 **1. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>

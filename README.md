@@ -54,6 +54,7 @@ ggpubr
 dplyr
 tidyr
 magrittr
+Others
 ```
 
 **3.** setting up the environments

@@ -70,9 +70,9 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 
 ### Outputs:
-1. Figures: Overlapping SNV site to Expression level - read coverage, distribution of pathogenic variants, which genes have the highest overlap for pathogenic variants, circular-omic plot of overlap of structural variants
-2. Table for statistics: For those annotation recorded by the VCF files
-3. Gene ontology and KEGG Pathway analysisfor the expressed pathogenic variants
+1. Figures: Overlapping SNV site to Expression level - read coverage, distribution of pathogenic variants, which genes have the highest overlap for pathogenic variants, circular-omic plot of overlap of structural variants.
+2. Tables: Statistics for those annotation recorded by the VCF files.
+3. Gene ontology and KEGG Pathway analysis for the expressed pathogenic variants.
 4. To suggest potential drug targets for clinical therapy.
 
 ### Detailed flow charts:

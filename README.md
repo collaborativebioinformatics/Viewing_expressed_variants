@@ -20,7 +20,7 @@ The development of next-generation sequencing revolutionized sequencing technolo
 
 
 ## Idea Outlines
-![](pictures/idea_outlines.png)
+![](pictures/idea_outlines_01.png)
 
 
 ## Example Data
@@ -76,7 +76,7 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 4. To suggest potential drug targets for clinical therapy.
 
 ### Detailed flow charts:
-![](pictures/workflow_charts.png)
+![](pictures/workflow_charts_01.png)
 
 
 ## Implementation (codes)

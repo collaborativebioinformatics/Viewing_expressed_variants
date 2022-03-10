@@ -46,31 +46,31 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 ![](pictures/workflow_charts.png)
 
 ## Implementation (codes)
-I. Preparing the sample files:<br/>
+#### I. Preparing the sample files:<br/>
 **1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-II. Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
+#### II. Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-III. Focusing on pathogenic variants only (Sara & Varuna):<br/>
+#### III. Focusing on pathogenic variants only (Sara & Varuna):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-IV. Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
+#### IV. Pathway analysis for pathogenic variants & genes (Olaitan & Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-V. Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
+#### V. Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):<br/>
 **1.** Molecular mechanisms:<br/>
 ```
 (codes)
@@ -80,7 +80,7 @@ V. Gene ontology analysis - molecular mechanisms and identification of druggable
 (codes)
 ```
 ----------//-------------//---------------------<br/>
-VI. Results integratiion (Kevin):<br/>
+#### VI. Results integratiion (Kevin):<br/>
 PS. Two results short list for clinician<br/>
 **1.** Top 5 important variants/ associated pathways:<br/>
 ```
@@ -91,7 +91,7 @@ PS. Two results short list for clinician<br/>
 (codes)
 ```
 ----------//-------------//---------------------
-VII. Visualization (Ankita, Jason & Anukrati):<br/>
+#### VII. Visualization (Ankita, Jason & Anukrati):<br/>
 **1.** Visualization of facts about each expressed variant: what genes/pathways it affects:<br/>
 ```
 (codes)
@@ -102,8 +102,8 @@ VII. Visualization (Ankita, Jason & Anukrati):<br/>
 ```
 ----------//-------------//---------------------<br/>
 
-##Example outputs & results
-1. results pictures:
+## Example outputs & results
+1. results pictures:<br/>
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
 

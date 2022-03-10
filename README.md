@@ -39,13 +39,13 @@ _(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 
 
 ## Installation
-**1.** Install the package
+**1.** Installing the Git Repository as a Package
 ```
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
 ```
 **2.** Software Requirements
 
-The following expression variants analysis tools have been installed:
+The following expression variants analysis tools have been installed into a singularity container:
 ```
 R version 4.0.4 (2021-02-15) -- "Lost Library Book"
 Bioconductor: 3.12
@@ -59,7 +59,7 @@ rWikiPathways 1.10.0
 
 ```
 
-**3.** setting up the environments
+**3.** Setting up the Environment
 
 A singularity container was built to run the expression variants analysis and visualization pipeline. The recipe file (expressed_variants.def) will be available this Git repository.
 

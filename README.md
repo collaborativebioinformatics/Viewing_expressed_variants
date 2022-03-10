@@ -29,17 +29,17 @@ _(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNP
 -  testSample.cancer.vcf <br/>
 -  testv25.variants.HC_hard_cutoffs_applied.cancer.tab <br/>
 -  testv25.variants.HC_hard_cutoff_applied.cancer.vcf <br/>
-OR
+OR<br/>
 _(Provided by: https://portal.gdc.cancer.gov/)_
--  TCGA-44-6164 (case ID)
+-  TCGA-44-6164 (case ID) <br/>
 ![](pictures/Example_data.png)
 
-## Installation & environments setup
+## Installation
 **1.** Install the package
 ```
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
 ```
-**2.** setting the environments
+**2.** setting up the environments
 ```
 (codes)
 ```
@@ -47,7 +47,7 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 ## Methods
 
 ### Inputs:
-_VCF file (sample-> online data base - 1000 genome or etc.) + RNAseq bam file_
+_VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam file_
 1. Expressed variants (VCF files from RNA seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 

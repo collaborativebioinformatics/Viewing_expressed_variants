@@ -24,11 +24,11 @@ To visualize the expression profiles and pathways associated with variants for s
 
 
 ## Example Data 
-testSample.cancer.tab <br/>
-testSample.cancer.vcf <br/>
-testv25.variants.HC_hard_cutoffs_applied.cancer.tab <br/>
-testv25.variants.HC_hard_cutoff_applied.cancer.vcf <br/>
-_Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic_
+-  testSample.cancer.tab <br/>
+-  testSample.cancer.vcf <br/>
+-  testv25.variants.HC_hard_cutoffs_applied.cancer.tab <br/>
+-  testv25.variants.HC_hard_cutoff_applied.cancer.vcf <br/>
+_(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_
 
 ## Installation & environments setup
 **1.** Install the package

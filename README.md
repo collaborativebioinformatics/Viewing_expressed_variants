@@ -24,7 +24,9 @@ To visualize the expression profiles and pathways associated with pathogenic var
 
 
 ## Example Data
-_(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_ OR _(Provided by: https://portal.gdc.cancer.gov/)_ 
+_(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_  <br/>
+OR  <br/>
+_(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 -  testSample.cancer.tab <br/>
 -  testSample.cancer.vcf <br/>
 -  testv25.variants.HC_hard_cutoffs_applied.cancer.tab <br/>

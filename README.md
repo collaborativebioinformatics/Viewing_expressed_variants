@@ -50,9 +50,7 @@ The following expression variants analysis tools have been installed:
 R version 4.0.4 (2021-02-15) -- "Lost Library Book"
 Bioconductor: 3.12
 ggplot2: 3.3.5
-Execution halted
 gridExtra: 2.3
-Execution halted
 dplyr: 1.0.7
 tidyr: 1.1.4
 magrittr: 2.0.2

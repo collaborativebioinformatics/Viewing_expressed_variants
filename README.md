@@ -12,12 +12,11 @@
 
 
 ## Goal
-To visualize the expression profiles and pathways associated with pathogenic variants for suggesting clinical therapy target and drug usage for Colorectal Cancer.
+To visualize the expression profiles and pathways associated with pathogenic variants for suggesting clinical therapy target and drug usage for Colorectal Cancer. The tool is intended to generate visualizations with a clinical focus. 
 
 
 ## Introduction
-(Describe)
-
+The development of Next Generation Sequencing revolutionized sequencing technology allowing researchers to construct gene expression profiles and identify potential pathogenic variants. Although NGS has led to a leap in sequencing technology, there remain significant challenges in translating the information to a clinical setting. Expression of variants has significant clinical relevance. Analysis of variant expression and its associated cellular pathways can be used to assess cancer risk, clinical outcomes, and possible treatment tagets. 
 
 ## Idea Outlines
 ![](pictures/idea_outlines.png)

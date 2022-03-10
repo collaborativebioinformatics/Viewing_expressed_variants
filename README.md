@@ -44,17 +44,20 @@ _(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
 ```
 **2.** Software Requirements
-The following software tools are needed in a Unix environment in order to do the analysis.
+The following expression variants analysis tools have been installed:
 ```
-R Bioconductor
-ggplot2
-ggradar
-gridExtra
-ggpubr
-dplyr
-tidyr
-magrittr
+R version 4.0.4 (2021-02-15) -- "Lost Library Book"
+Bioconductor: 3.12
+ggplot2: 3.3.5
+Execution halted
+gridExtra: 2.3
+Execution halted
+dplyr: 1.0.7
+tidyr: 1.1.4
+magrittr: 2.0.2
+STAR: 2.7.9a
 rWikiPathways
+
 ```
 
 A singularity container was built to run the pipeline. The recipe file (expressed_variants.def) will be available this Git repository.

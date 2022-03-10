@@ -15,20 +15,21 @@ To visualize the expression profiles and pathways associated with variants for s
 ## Introduction 
 (Describe)
 
-## Test Data 
+## Idea Outlines
+![](pictures/idea_outlines.png)
 
-## Installation 
+## Test Data 
+(Describe)
+
+## Installation & environments setup
 **1.** Install the package
 ```
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
 ```
-**2.**
+**2.** setting the environments
 ```
 (codes)
 ```
-
-## Outlines
-![](pictures/idea_outlines.png)
 
 ## Methods
 
@@ -58,18 +59,21 @@ II. Data cleaning for Vcf files or tabulated files as input (Sara):
 (codes)
 ```
 ----------//-------------//---------------------
+
 III. Focusing on pathogenic variants only (Sara & Varuna):
 **1.**
 ```
 (codes)
 ```
 ----------//-------------//---------------------
+
 IV. Pathway analysis for pathogenic variants & genes (Olaitan & Sara):
 **1.**
 ```
 (codes)
 ```
 ----------//-------------//---------------------
+
 V. Gene ontology analysis - molecular mechanisms and identification of druggable target (Yejie, Varuna, Jason & Kevin):
 **1.** Molecular mechanisms:
 ```
@@ -80,6 +84,7 @@ V. Gene ontology analysis - molecular mechanisms and identification of druggable
 (codes)
 ```
 ----------//-------------//---------------------
+
 VI. Results integratiion (Kevin):
 Two results short list for clinician
 **1.** Top 5 important variants/ associated pathways:
@@ -91,6 +96,7 @@ Two results short list for clinician
 (codes)
 ```
 ----------//-------------//---------------------
+
 VII. Visualization (Ankita, Jason & Anukrati):
 **1.** Visualization of facts about each expressed variant: what genes/pathways it affects:
 ```
@@ -102,7 +108,7 @@ VII. Visualization (Ankita, Jason & Anukrati):
 ```
 ----------//-------------//---------------------
 
-###Example outputs
+####Example outputs
 1. results pictures:
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants

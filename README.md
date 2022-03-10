@@ -111,7 +111,7 @@ _PS. Two results short list for clinician<br/>_
 (codes)
 ```
 
-### (step 7) Visualization (Ankita, Jason & Anukrati):<br/>
+### (step 6) Visualization (Ankita, Jason & Anukrati):<br/>
 **1. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
 ```
 (codes)

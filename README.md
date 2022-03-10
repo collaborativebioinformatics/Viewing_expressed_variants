@@ -136,4 +136,4 @@ For use by https://github.com/collaborativebioinformatics/Viewing_expressed_vari
 - https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic
 - https://github.com/collaborativebioinformatics/snpReportR
 - https://github.com/collaborativebioinformatics/Differential_Expression_and_Variant_Association
-- https://github.com/collaborativebioinformatics/DeepExpression (might be useful for both projects)
+- https://github.com/collaborativebioinformatics/DeepExpression

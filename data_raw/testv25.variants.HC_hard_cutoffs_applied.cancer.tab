@@ -1,0 +1,16 @@
+CHROM	POS	REF	ALT	GENE	DP	QUAL	MQ	clinvar_sig	TUMOR	TISSUE	COSMIC_ID	FATHMM	chasmplus_pval	vest_pval	mupit_link	
+chr2	10802518	C	A	PDIA6	8	61.64	60	NA	other_--_neoplasm	thyroid	COSV55352693	PATHOGENIC	0.166	0.20524	"http://www.cravat.us/MuPIT_Interactive?gm=chr2:10802518"
+chr2	96269269	G	A	CIAO1	3	50.64	60	NA	carcinoma_--_adenocarcinoma	lung	COSV51499371	PATHOGENIC	NA	NA	NA
+chr3	141922051	G	A	ATP1B3	8	43.64	60	NA	haematopoietic_neoplasm_--_acute_myeloid_leukaemia	haematopoietic_and_lymphoid_tissue	COSV53951707	PATHOGENIC	NA	NA	NA
+chr4	184760469	T	C	ACSL1	3	53.64	60	NA	NA	NA	NA	NA	0.319	0.00536	"http://www.cravat.us/MuPIT_Interactive?gm=chr4:184760469"
+chr5	34826417	A	G	RAI14	2	58.32	60	NA	NA	NA	NA	NA	0.182	0.02409	NA
+chr6	31356423	G	C	HLA-B	7	67.64	60	NA	other_--_neoplasm	thyroid	COSV69520372	NEUTRAL	0.00697	NA	"http://www.cravat.us/MuPIT_Interactive?gm=chr6:31356423"
+chr8	17864667	C	T	FGL1	5	117.14	60	NA	carcinoma_--_adenocarcinoma	lung	COSV67712996	PATHOGENIC	NA	0.16818	NA
+chr9	123132910	C	A	STRBP	2	48.32	60	NA	NA	NA	NA	NA	0.0667	0.01994	NA
+chr12	6751656	A	T	MLF2	5	40.64	60	NA	NA	NA	NA	NA	0.0499	0.11699	NA
+chr13	33818196	C	T	RFC3	4	22.64	60	NA	carcinoma_--_squamous_cell_carcinoma	upper_aerodigestive_tract	COSV66296617	PATHOGENIC	NA	NA	NA
+chr16	368574	C	T	MRPL28	4	50.64	60	NA	NA	NA	NA	NA	0.226	0.03987	"http://www.cravat.us/MuPIT_Interactive?gm=chr16:368574"
+chr16	23690035	C	T	PLK1	4	126.14000000000001	60	NA	carcinoma_--_adenocarcinoma	lung	COSV55623104	PATHOGENIC	0.0144	NA	"http://www.cravat.us/MuPIT_Interactive?gm=chr16:23690035"
+chr16	87403158	A	G	MAP1LC3B	2	57.32	60	NA	carcinoma_--_adenocarcinoma	prostate	COSV51784503	PATHOGENIC	NA	NA	NA
+chr17	41886154	G	A	ACLY	2	55.32	60	NA	NA	NA	NA	NA	0.0542	0.00415	"http://www.cravat.us/MuPIT_Interactive?gm=chr17:41886154"
+chr19	805146	A	G	PTBP1	6	46.64	60	NA	NA	NA	NA	NA	0.0386	0.02368	"http://www.cravat.us/MuPIT_Interactive?gm=chr19:805146"

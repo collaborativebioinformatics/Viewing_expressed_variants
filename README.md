@@ -30,7 +30,6 @@ _(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNP
 -  testSample.cancer.vcf <br/>
 -  testv25.variants.HC_hard_cutoffs_applied.cancer.tab <br/>
 -  testv25.variants.HC_hard_cutoff_applied.cancer.vcf <br/>
-### OR
 #### Option 2: Raw .vcf files & paired multi-omic data from TCGA  <br/>
 _(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 -  TCGA-44-6164 (case ID) <br/>

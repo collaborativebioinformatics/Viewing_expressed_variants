@@ -59,7 +59,9 @@ rWikiPathways 1.10.0
 
 ```
 
-A singularity container was built to run the pipeline. The recipe file (expressed_variants.def) will be available this Git repository.
+**3.** setting up the environments
+
+A singularity container was built to run the expression variants analysis and visualization pipeline. The recipe file (expressed_variants.def) will be available this Git repository.
 
 To build the singularity container on your unix environment, do:
 ```
@@ -76,10 +78,6 @@ To run specific R packages by using the container, do:
 singularity exec expressed_variants.sif R <path_to_Rscript>
 ```
 
-**3.** setting up the environments
-```
-(codes)
-```
 
 ## Methods
 

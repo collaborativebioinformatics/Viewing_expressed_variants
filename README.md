@@ -63,7 +63,7 @@ ggpubr: 0.4.0
 
 **3.** Setting up the Environment
 
-A singularity container was built to run the expression variants analysis and visualization pipeline. The recipe file (expressed_variants.def) will be available this Git repository.
+A singularity container was built to run the expression variants analysis and visualization pipeline. The recipe file (expressed_variants.def) will be available in this Git repository.
 
 To build the singularity container on your unix environment, do:
 ```
@@ -101,7 +101,24 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 ### (step 1) Preparing the sample files:<br/>
 **1.**<br/>
 ```
-(codes)
+## Hackathon 
+library(data.table) # for data.table functions
+library(dplyr) # for pipe, filter, str_detect
+
+# read in full file, espite variable number of fields at first
+all_content <- readLines("/Users/saracarioscia/Downloads/testSample.cancer.vcf")
+# skip until we get to the fixed area header
+variant_rows <- all_content[-c(1:grep("#CHROM", all_content))]
+# read back in the fixed lines as a table
+variants <- read.table(textConnection(variant_rows))
+
+# get only pathogenic variants
+variants_dt <- variants %>% as.data.table()
+pathogenic_variants <- variants_dt %>%
+  filter_all(any_vars(str_detect(., pattern = "PATHOGENIC")))
+# write it back as a csv
+write.csv(pathogenic_variants, "~/Downloads/pathogenic_variants.csv", row.names = FALSE, quote = FALSE)
+
 ```
 
 ### (step 2) Data cleaning for Vcf files or tabulated files as input (Sara):<br/>

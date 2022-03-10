@@ -71,9 +71,9 @@ To run the container on your unix environment, do:
 singularity run expressed_variants.sif
 ```
 
-To run specific R scripts using the container, do:
+To run specific R packages by using the container, do:
 ```
-singularity exec expressed_variants.sif <path_to_script>
+singularity exec expressed_variants.sif R <path_to_Rscript>
 ```
 
 **3.** setting up the environments

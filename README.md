@@ -45,7 +45,8 @@ devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants
 ```
 **2.** Software Requirements
 
-The following expression variants analysis tools have been installed into a singularity container:
+The following expression variants analysis tools have been installed in this container:
+
 ```
 R version 4.0.4 (2021-02-15) -- "Lost Library Book"
 Bioconductor: 3.12
@@ -54,8 +55,9 @@ gridExtra: 2.3
 dplyr: 1.0.7
 tidyr: 1.1.4
 magrittr: 2.0.2
-STAR: 2.7.9a
-rWikiPathways 1.10.0
+rWikiPathways: 1.10.0
+ggradar: 0.2
+ggpubr: 0.4.0
 
 ```
 
@@ -87,10 +89,10 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 
 ### Outputs:
-1. Summary statistics of expressed variants and pathogenic variants. 
+1. Summary statistics of expressed variants and pathogenic variants.
 2. Tables: Statistics for those annotation recorded by the VCF files.
 3. Gene ontology and KEGG Pathway analysis for the expressed pathogenic variants.
-4. Potential clinical targets. 
+4. Potential clinical targets.
 
 ### Detailed flow charts:
 ![](pictures/workflow_charts_00.png)

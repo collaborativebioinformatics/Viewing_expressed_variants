@@ -98,10 +98,10 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 
 ## Implementation (codes)
 
-### (step 1) Preparing the sample files:<br/>
+### (step 1) Preparing the Sample Files:<br/>
 **1.**<br/>
 ```
-## Hackathon 
+## Hackathon
 library(data.table) # for data.table functions
 library(dplyr) # for pipe, filter, str_detect
 
@@ -121,19 +121,19 @@ write.csv(pathogenic_variants, "~/Downloads/pathogenic_variants.csv", row.names 
 
 ```
 
-### (step 2) Data cleaning for Vcf files or tabulated files as input (Sara):<br/>
+### (step 2) Data Cleaning for VCF Files or Tabulated Files as Input (Sara):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
 
-### (step 3) Focusing on pathogenic variants only (Sara & Varuna):<br/>
+### (step 3) Focusing on Pathogenic Variants only (Sara & Varuna):<br/>
 **1.**<br/>
 ```
 (codes)
 ```
 
-### (step 4) Gene ontology and pathway analysis for pathogenic variants & genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
+### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
 **1.**<br/>
 ```
 (codes)
@@ -147,7 +147,7 @@ write.csv(pathogenic_variants, "~/Downloads/pathogenic_variants.csv", row.names 
 (codes)
 ```
 
-### (step 5) Results integration (Kevin):<br/>
+### (step 5) Results Integration and Visualization (Kevin):<br/>
 _PS. Two results short list for clinician<br/>_
 
 **1. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
@@ -170,14 +170,14 @@ _PS. Two results short list for clinician<br/>_
 ```
 
 
-## Example Data outputs & results
+## Example Data Outputs & Results
 **1. Figures & Tables:**<br/>
 <img width="323" alt="Screen Shot " src="https://XXX.png">
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
 
 
 ## References
-- Data: https://XXX
+- Data: 
 - GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows
 - DNANexus documentation https://documentation.dnanexus.com/developer/apps/execution-environment/connecting-to-jobs
 - https://github.com/collaborativebioinformatics/omics_clinical_reporting

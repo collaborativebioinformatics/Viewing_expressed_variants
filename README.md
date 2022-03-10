@@ -39,7 +39,20 @@ _(Provided by: https://portal.gdc.cancer.gov/)_
 ```
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
 ```
-**2.** setting up the environments
+**2.** Software Requirements
+The following software tools are needed in a Unix environment in order to do the analysis.
+```
+R
+ggplot2
+ggradar
+gridExtra
+ggpubr
+dplyr
+tidyr
+magrittr
+```
+
+**3.** setting up the environments
 ```
 (codes)
 ```

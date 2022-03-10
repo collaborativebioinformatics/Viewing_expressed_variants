@@ -1,21 +1,21 @@
 # Viewing_expressed_variants
 
 
-## Contributors 
--  Kevin Elaba, Ankita Murmu, Rajarshi Mondal, Anukrati Nigam, ChunHsuan LO (Jason) - **Sysadmin** 
--  Ahmad Khleifat, Olaitan Awe, Varuna Chander - **Tech support**
+## Contributors
+-  Kevin Elaba, Ankita Murmu, Rajarshi Mondal, Anukrati Nigam, ChunHsuan LO (Jason) - **Sysadmin**
+-  Ahmad Khleifat, Olaitan I. Awe, Varuna Chander - **Tech support**
 -  Sara Carioscia, Yejie Yun - **Writer**
--  Kevin Elaba - **Slides construction** 
--  Yejie Yun, Anukrati Nigam - **Results presenter & advertisements** 
+-  Kevin Elaba - **Slides construction**
+-  Yejie Yun, Anukrati Nigam - **Results presenter & advertisements**
 -  Yejie Yun, Rajarshi Mondal, Ankita Murmu, Olaitan I. Awe, ChunHsuan LO (Jason) - **Github maintenance**
--  ChunHsuan LO (Jason) - **Lead, Liaison** 
+-  ChunHsuan LO (Jason) - **Lead, Liaison**
 
 
-## Goal 
+## Goal
 To visualize the expression profiles and pathways associated with variants for suggesting clinical therapy target & drug usage.
 
 
-## Introduction 
+## Introduction
 (Describe)
 
 
@@ -23,7 +23,7 @@ To visualize the expression profiles and pathways associated with variants for s
 ![](pictures/idea_outlines.png)
 
 
-## Example Data 
+## Example Data
 _(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_
 -  testSample.cancer.tab <br/>
 -  testSample.cancer.vcf <br/>
@@ -52,9 +52,9 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 2. Making technical framework for input of VCF and BAM files for both visualization of reports as well as looking at the input of the read coverage for isoforms and gene count distribution.
 
 ### Outputs:
-1. Figures: Overlapping SNV site to Expression level - read coverage, distribution of pathogenic variants, which genes have the highest overlap for pathogenic variants, circular-omic plot of overlap of structural variants 
-2. Table for statistics: For those annotation recorded by the VCF files 
-3. Gene ontology and KEGG Pathway analysisfor the expressed pathogenic variants 
+1. Figures: Overlapping SNV site to Expression level - read coverage, distribution of pathogenic variants, which genes have the highest overlap for pathogenic variants, circular-omic plot of overlap of structural variants
+2. Table for statistics: For those annotation recorded by the VCF files
+3. Gene ontology and KEGG Pathway analysisfor the expressed pathogenic variants
 4. To suggest potential drug targets for clinical therapy.
 
 ### Detailed flow charts:
@@ -126,13 +126,12 @@ _PS. Two results short list for clinician<br/>_
 For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
 
 
-## References 
+## References
 - Data: https://XXX
-- GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows 
-- DNANexus documentation https://documentation.dnanexus.com/developer/apps/execution-environment/connecting-to-jobs 
+- GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows
+- DNANexus documentation https://documentation.dnanexus.com/developer/apps/execution-environment/connecting-to-jobs
 - https://github.com/collaborativebioinformatics/omics_clinical_reporting
 - https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic
 - https://github.com/collaborativebioinformatics/snpReportR
 - https://github.com/collaborativebioinformatics/Differential_Expression_and_Variant_Association
 - https://github.com/collaborativebioinformatics/DeepExpression (might be useful for both projects)
-

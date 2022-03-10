@@ -1,0 +1,83 @@
+---
+title: '&nbsp;'
+output: html_document
+date: '&nbsp;'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{css, echo=FALSE}
+@page{
+  size: 8in, 11in;
+}
+body {
+  margin: auto;
+}
+html {
+  font-family: arial;
+  width: 8in;
+  height: 10.9in;
+  margin: auto;
+}
+h2 {
+  border-radius: 25px;
+  padding: 10px;
+
+}
+h3 {
+  text-decoration: underline;
+}
+#report {
+  background-color: #cce7f1;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+```
+<h2 style="text-align:left;">
+    Patient Name
+    <span style="float:right;">
+        DOB
+    </span>
+</h2>
+
+<div id = "report">
+### For Clinicians:
+#### Expressed Variants:
+
+<!-- insert PNG of expressed variants here -->
+```{r cars, echo=FALSE}
+summary(cars)
+```
+...description of variants here...
+
+#### Further Analysis:
+<!-- insert PNGs of relevant plots here, add descriptions if needed -->
+<center>
+![](try.png){width=350px} ![](try.png){width=350px}
+
+</center>
+...description of plots here...
+</div>
+\
+
+<div id = "report">
+<h3> For Researchers: </h3>
+<h4> Expressed Variants: </h4>
+
+```{r genes, echo=FALSE}
+summary(cars)
+```
+...description of variants here...
+
+#### Further Analysis:
+<!-- insert PNGs of relevant plots here, add descriptions if needed -->
+<center>
+![](try.png){width=350px} ![](try.png){width=350px}
+
+</center>
+...description of plots here...
+
+</div>

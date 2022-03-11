@@ -533,7 +533,6 @@ Figure legends: In each figure there are 7 tracks, the 1st track shows the gene 
 ### 1. Figures & Tables:**<br/>
 
 ## References
-- Data:
 - GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows
 - DNANexus documentation https://documentation.dnanexus.com/developer/apps/execution-environment/connecting-to-jobs
 - https://github.com/collaborativebioinformatics/omics_clinical_reporting

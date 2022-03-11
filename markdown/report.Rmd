@@ -37,14 +37,12 @@ h3 {
 
 ```
 <h2 style="text-align:left;">
-    Patient Name
-    <span style="float:right;">
-        DOB
-    </span>
+    VCF_file_name
 </h2>
 
 <div id = "report">
 ### For Clinicians:
+
 #### Expressed Variants:
 
 <!-- insert PNG of expressed variants here -->
@@ -52,12 +50,18 @@ h3 {
 summary(cars)
 ```
 ...description of variants here...
+<!-- topmost pathways associated with the genes -->
+<!-- which pathway is overrepresented -->
+<!-- split into 2 parts, snvs + indels, structural variants -->
 
 #### Further Analysis:
 <!-- insert PNGs of relevant plots here, add descriptions if needed -->
+<!-- gene pathway + common pathway + optional flowchart -->
+<!-- one figure at a time, labelled A/B/etc, comments:  -->
 <center>
 ![](try.png){width=350px} ![](try.png){width=350px}
-
+<!-- insert 2 figures for structural variance (Jason + Ankita) -->
+<!-- add description here -->
 </center>
 ...description of plots here...
 </div>
@@ -71,12 +75,17 @@ summary(cars)
 summary(cars)
 ```
 ...description of variants here...
+<!-- insert table of top structural variants -->
+<!-- insert table of top coding variants -->
 
 #### Further Analysis:
 <!-- insert PNGs of relevant plots here, add descriptions if needed -->
 <center>
 ![](try.png){width=350px} ![](try.png){width=350px}
-
+<!-- insert distribution of coding variants-->
+<!-- insert flowchart -->
+<!-- insert distribution of FATHMM prediction -->
+<!-- insert distribution of tissue and tumor w/in file -->
 </center>
 ...description of plots here...
 

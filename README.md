@@ -100,7 +100,7 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 ## Implementation (codes)
 
 ### (step 1) Preparing the Sample Files:<br/>
-****<br/>
+**Data manipulation**<br/>
 ```
 ## Hackathon
 library(data.table) # for data.table functions

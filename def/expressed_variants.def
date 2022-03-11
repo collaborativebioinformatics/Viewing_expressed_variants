@@ -29,7 +29,7 @@ From: debian:stable-20211011-slim
 
   #data.table
   Rscript -e 'BiocManager::install("data.table")'
-  
+
   ##Tidyr
   Rscript -e 'BiocManager::install("tidyr")'
 
@@ -71,4 +71,4 @@ From: debian:stable-20211011-slim
     Date 10mar2022
 
 %help
-    This definition file builds a singularity container for RNAseq analysis.
+    This definition file builds a singularity container for expression variants analysis.

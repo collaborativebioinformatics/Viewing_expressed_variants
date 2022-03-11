@@ -64,7 +64,7 @@ data.table: 1.14.2
 
 **3.** Setting up the Environment
 
-A singularity container was built to run the expression variants analysis and visualization pipeline. The recipe file (expressed_variants.def) will be available in this Git repository.
+A singularity container was built to run the expression variants analysis and visualization pipeline. The recipe file [expressed_variants.def](def/expressed_variants.def) is available in this Git repository.
 
 To build the singularity container on your unix environment, do:
 ```

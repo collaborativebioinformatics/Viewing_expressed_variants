@@ -1,0 +1,29 @@
+## Hackathon
+library(data.table) # for data.table functions
+library(dplyr) # for pipe, filter, str_detect
+
+# read in full file, espite variable number of fields at first
+all_content <- readLines("/Users/saracarioscia/Downloads/testSample.cancer.vcf")
+# skip until we get to the fixed area header
+variant_rows <- all_content[-c(1:grep("#CHROM", all_content))]
+# read back in the fixed lines as a table
+variants <- read.table(textConnection(variant_rows))
+
+# get only pathogenic variants
+variants_dt <- variants %>% as.data.table()
+pathogenic_variants <- variants_dt %>%
+  filter_all(any_vars(str_detect(., pattern = "PATHOGENIC")))
+# write it back as a csv
+write.csv(pathogenic_variants, "~/Downloads/pathogenic_variants.csv", row.names = FALSE, quote = FALSE)
+
+# Format is `|GENE=gene_name|`. Try to grab the content between GENE= and |
+for (i in 1:nrow(pathogenic_variants)) {
+  # go through each row of the pathogenic variants
+  row <- pathogenic_variants[i,]
+  # grab the content after GENE=
+  gene <- str_match(row, "GENE=\\s*(.*?)\\s*;")
+  # other rows are grabbed; we want those that are not NA
+  gene <- gene[,2][!is.na(gene[,2])]
+  # assign the gene to the column in pathogenic_variants
+  pathogenic_variants$genes[i] <- gene
+}

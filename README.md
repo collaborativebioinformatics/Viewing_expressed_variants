@@ -632,6 +632,9 @@ Figure legends: In each figure there are 7 tracks, the 1st track shows the gene 
  
 ### 3. Functional enrichment analysis
   ![](pictures/gProfiler.png)
+  
+### 4. Variant distribution 
+  ![](pictures/image.png)
 
 ## References
 - GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows

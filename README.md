@@ -145,29 +145,7 @@ for (i in 1:nrow(pathogenic_variants)) {
 ### (step 3) Focusing on Pathogenic Variants only (Sara & Varuna):<br/>
 **3.**<br/>
 ```
-# Read in df
-df <- read.csv("~/pathogenic_variants.csv", header = T)
-colnames(df) <- c("CHR","POS","REF","ALT","FILTER","VariantImpact","GENE")
-
-# Plot variant distribution figure
-
-df %>% ggplot2::ggplot(aes(x=VariantImpact, fill = VariantImpact))+
-  geom_bar()+
-  theme(axis.text.x = element_text(angle = 90)) +
-  geom_text(aes(label = ..count..), stat="count",vjust = -0.5, colour = "black")+
-  labs(title = "Pathogenic variants impact",
-       x = "Variant Type",
-       y = "Number of variants", 
-       fill = "Variant Impact")
-ggsave("../pictures/pathogenic_variants_impact.png")
-  
-df %>% ggplot2::ggplot(aes(x=GENE, y = VariantImpact, fill = VariantImpact, colour - "white"))+
-  geom_tile(show.legend = F)+
-  theme(axis.text.x = element_text(angle = 90)) +
-  labs(title = "Genes with variants and their impact",
-       x = "Genes",
-       y = "Variant Impact")
-ggsave("../pictures/gene-genetic_variant_association.png")      
+(codes)   
  
 ```
 
@@ -265,9 +243,31 @@ _PS. Two results short list for clinician<br/>_
 ```
 
 ### (step 6) Visualization (Ankita, Jason & Anukrati):<br/>
-**6a. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
+**6a. Visualization of facts about expressed variants: what genes/pathways it affects:**<br/>
 ```
-(codes)
+# Read in df
+df <- read.csv("~/pathogenic_variants.csv", header = T)
+colnames(df) <- c("CHR","POS","REF","ALT","FILTER","VariantImpact","GENE")
+
+# Plot variant distribution figure
+
+df %>% ggplot2::ggplot(aes(x=VariantImpact, fill = VariantImpact))+
+  geom_bar()+
+  theme(axis.text.x = element_text(angle = 90)) +
+  geom_text(aes(label = ..count..), stat="count",vjust = -0.5, colour = "black")+
+  labs(title = "Pathogenic variants impact",
+       x = "Variant Type",
+       y = "Number of variants", 
+       fill = "Variant Impact")
+ggsave("../pictures/pathogenic_variants_impact.png")
+  
+df %>% ggplot2::ggplot(aes(x=GENE, y = VariantImpact, fill = VariantImpact, colour - "white"))+
+  geom_tile(show.legend = F)+
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(title = "Genes with variants and their impact",
+       x = "Genes",
+       y = "Variant Impact")
+ggsave("../pictures/gene-genetic_variant_association.png")   
 ```
 **6b. Visualization of genome tracks where variants located:**<br/>
 <details>

@@ -45,11 +45,12 @@ h3 {
 
 #### Expressed Variants:
 
-<!-- insert PNG of expressed variants here -->
+<!-- insert PNG of expressed variants table here -->
 ```{r cars, echo=FALSE}
 summary(cars)
 ```
-...description of variants here...
+...description of variants here... \
+TODO: insert topmost pathways associated with the genes - which pathway is overrepresnted \
 <!-- topmost pathways associated with the genes -->
 <!-- which pathway is overrepresented -->
 <!-- split into 2 parts, snvs + indels, structural variants -->
@@ -59,10 +60,25 @@ summary(cars)
 <!-- gene pathway + common pathway + optional flowchart -->
 <!-- one figure at a time, labelled A/B/etc, comments:  -->
 <center>
-![](try.png){width=350px} ![](try.png){width=350px}
+<figure>
+    ![](../pictures/common_pathways.png){width=500px}
+    <figcaption>Figure A: ... </figcaption>
+</figure>
+
+<figure>
+![](../pictures/gene_pathway_association.png){width=500px}
+<figcaption>Figure B: ... </figcaption>
+</figure>
+
+<figure>
+    ![](../pictures/gene_GO_association.png){width=500px}
+    <figcaption>Figure C: ... </figcaption>
+</figure>
+
 <!-- insert 2 figures for structural variance (Jason + Ankita) -->
 <!-- add description here -->
 </center>
+\
 ...description of plots here...
 </div>
 \
@@ -82,11 +98,16 @@ summary(cars)
 <!-- insert PNGs of relevant plots here, add descriptions if needed -->
 <center>
 ![](try.png){width=350px} ![](try.png){width=350px}
+TODO: insert distribution of coding variants \
+TODO: insert flowchart \
+TODO: insert distribution of FATHMM prediction \
+TODO: insert distribution of tissue and tumor w/in file \
 <!-- insert distribution of coding variants-->
 <!-- insert flowchart -->
 <!-- insert distribution of FATHMM prediction -->
 <!-- insert distribution of tissue and tumor w/in file -->
 </center>
+\
 ...description of plots here...
 
 </div>

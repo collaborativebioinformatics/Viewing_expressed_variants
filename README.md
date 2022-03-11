@@ -635,6 +635,10 @@ Figure legends: In each figure there are 7 tracks, the 1st track shows the gene 
   
 ### 4. Variant distribution 
   ![](pictures/image.png)
+  
+### 5. Epigenetics
+  ![](pictures/TCGA_44_6146_CAMK1D_Epigenetic_plotting.png)
+  ![](pictures/TCGA_44_6146_DHTKD1_Epigenetic_plotting.png)
 
 ## References
 - GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows

@@ -145,13 +145,103 @@ for (i in 1:nrow(pathogenic_variants)) {
 ### (step 3) Focusing on Pathogenic Variants only (Sara & Varuna):<br/>
 **3.**<br/>
 ```
-(codes)
+# Read in df
+df <- read.csv("~/pathogenic_variants.csv", header = T)
+colnames(df) <- c("CHR","POS","REF","ALT","FILTER","VariantImpact","GENE")
+
+# Plot variant distribution figure
+
+df %>% ggplot2::ggplot(aes(x=VariantImpact, fill = VariantImpact))+
+  geom_bar()+
+  theme(axis.text.x = element_text(angle = 90)) +
+  geom_text(aes(label = ..count..), stat="count",vjust = -0.5, colour = "black")+
+  labs(title = "Pathogenic variants impact",
+       x = "Variant Type",
+       y = "Number of variants", 
+       fill = "Variant Impact")
+ggsave("../pictures/pathogenic_variants_impact.png")
+  
+df %>% ggplot2::ggplot(aes(x=GENE, y = VariantImpact, fill = VariantImpact, colour - "white"))+
+  geom_tile(show.legend = F)+
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(title = "Genes with variants and their impact",
+       x = "Genes",
+       y = "Variant Impact")
+ggsave("../pictures/gene-genetic_variant_association.png")      
+ 
 ```
 
 ### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
 **4a.**<br/>
 ```
-(codes)
+library(gprofiler2)
+# grabs from data output, check this path w group?
+path_data <- read.csv("../data_output/pathogenic_variants_try.csv")
+gene_ids <- as.list(path_data[,5])
+
+# query for KEGG + REAC
+gostres <- gost(query = gene_ids, 
+                organism = "hsapiens", sources = c("KEGG","REAC"))
+
+ens_id <- data.frame(gostres$meta$genes_metadata$query)
+ens_id <- data.frame(t(ens_id))
+ens_id <- unique(ens_id)
+ens_id$geneInfo <- rownames(ens_id)
+ens_id_data <- gostres$result
+
+spl <- t(data.frame(strsplit(ens_id$geneInfo, split='.', fixed=TRUE)))
+colnames(spl) <- c("queryID","geneName")
+ens_id_df <- cbind(ens_id, spl)
+
+gene_pathway_association <- dplyr::left_join(ens_id_data, ens_id_df, by = c("query" = "queryID"))
+gene_pathway_association %>% ggplot2::ggplot(aes(x = term_name, y = geneName, fill =term_name)) +
+  geom_tile(show.legend = F) +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.text.x = element_text(angle = 90))+
+  labs(title = "Genes and Pathway association",x = "Pathways", y = "Genes")
+ggsave("../pictures/gene_pathway_association.png")
+
+
+
+pathdf <- gene_pathway_association %>% dplyr::group_by(term_name) %>% dplyr::tally()
+pathdf %>% ggplot2::ggplot(aes(x = term_name, y = n, fill = term_name, label = n)) +
+  geom_bar(width = 1, stat = "identity", color = "white") +
+  geom_text()+
+  theme_bw()+
+  labs(fill = "Pathways", title = "Common pathways")+
+  theme(axis.title = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text.y = element_blank())+
+  coord_polar()
+ggsave("../pictures/common_pathways.png")
+
+# query for GO
+gostres <- gost(query = gene_ids, 
+                organism = "hsapiens", sources = "GO")
+
+ens_id <- data.frame(gostres$meta$genes_metadata$query)
+ens_id <- data.frame(t(ens_id))
+ens_id <- unique(ens_id)
+ens_id$geneInfo <- rownames(ens_id)
+ens_id_data <- gostres$result
+
+spl <- t(data.frame(strsplit(ens_id$geneInfo, split='.', fixed=TRUE)))
+colnames(spl) <- c("queryID","geneName")
+ens_id_df <- cbind(ens_id, spl)
+
+GO_association <- dplyr::left_join(ens_id_data, ens_id_df, by = c("query" = "queryID"))
+GO_association %>% ggplot2::ggplot(aes(x = term_name, y = geneName, fill =term_name)) +
+  geom_tile(show.legend = F) +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.text.x = element_text(angle = 90))+
+  labs(title = "Genes and Gene Ontology association",x = "Gene Ontology", y = "Genes")
+ggsave("../pictures/gene_GO_association.png")
 ```
 **4b. Molecular mechanisms:**<br/>
 ```

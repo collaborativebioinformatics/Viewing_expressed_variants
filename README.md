@@ -244,7 +244,7 @@ _PS. Two results short list for clinician<br/>_
 ```
 
 ### (step 6) Visualization :<br/>
-**Visualization of facts about expressed variants: what genes/pathways it affects:**<br/>
+**6a. Visualization of facts about expressed variants: what genes/pathways it affects:**<br/>
 ```
 # Read in df
 df <- read.csv("~/pathogenic_variants.csv", header = T)

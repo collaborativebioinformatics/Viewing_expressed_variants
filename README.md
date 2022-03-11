@@ -147,15 +147,15 @@ for (i in 1:nrow(pathogenic_variants)) {
 ```
 
 ### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
-**4.**<br/>
+**4a.**<br/>
 ```
 (codes)
 ```
-**5. Molecular mechanisms:**<br/>
+**4b. Molecular mechanisms:**<br/>
 ```
 (codes)
 ```
-**6. Identification of druggable target:**<br/>
+**4c. Identification of druggable target:**<br/>
 ```
 (codes)
 ```
@@ -163,21 +163,21 @@ for (i in 1:nrow(pathogenic_variants)) {
 ### (step 5) Results Integration and Visualization (Kevin):<br/>
 _PS. Two results short list for clinician<br/>_
 
-**1. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
+**5a. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
 ```
 (codes)
 ```
-**2. Broader list for researchers:**<br/>
+**5b. Broader list for researchers:**<br/>
 ```
 (codes)
 ```
 
 ### (step 6) Visualization (Ankita, Jason & Anukrati):<br/>
-**1. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
+**6a. Visualization of facts about each expressed variant: what genes/pathways it affects:**<br/>
 ```
 (codes)
 ```
-**2. Visualization of genome tracks where variants located:**<br/>
+**6b. Visualization of genome tracks where variants located:**<br/>
 ```
 (codes)
 ```

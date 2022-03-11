@@ -100,8 +100,7 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 ## Implementation (codes)
 
 ### (step 1) Preparing the Sample Files:<br/>
-****
-<br/>
+****<br/>
 ```
 ## Hackathon
 library(data.table) # for data.table functions
@@ -221,10 +220,12 @@ GO_association %>% ggplot2::ggplot(aes(x = term_name, y = geneName, fill =term_n
   labs(title = "Genes and Gene Ontology association",x = "Gene Ontology", y = "Genes")
 ggsave("../pictures/gene_GO_association.png")
 ```
+
 ** Molecular mechanisms:**<br/>
 ```
 (code)
 ```
+
 ** Identification of druggable target:**<br/>
 ```
 (code)

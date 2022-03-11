@@ -178,7 +178,7 @@ _PS. Two results short list for clinician<br/>_
 (codes)
 ```
 **6b. Visualization of genome tracks where variants located:**<br/>
-```
+
 <details>
 test
   <summary>
@@ -188,7 +188,7 @@ test
  QQQQ
  QQQQ
 </details>
-```
+
       
 ```
 #CMUHackathon_visualization_Genometrack_datapreparing.R

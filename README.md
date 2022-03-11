@@ -68,7 +68,7 @@ A singularity container was built to run the expression variants analysis and vi
 
 To build the singularity container on your unix environment, do:
 ```
-singularity build expressed_variants.sif expressed_variants.def
+singularity build expressed_variants.sif def/expressed_variants.def
 ```
 
 To run the container on your unix environment, do:

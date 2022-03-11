@@ -179,18 +179,6 @@ _PS. Two results short list for clinician<br/>_
 ```
 **6b. Visualization of genome tracks where variants located:**<br/>
 ```
-<details>
-test
-  <summary>
-  testtesttesttesttest
-  testtesttesttesttest
-  </summary>
- QQQQ
- QQQQ
-</details>
-```
-      
-```
 #CMUHackathon_visualization_Genometrack_datapreparing.R
 ####＝＝＝＝＝＝＝＝＝＝Environments setting＝＝＝＝＝＝＝＝＝＝
 target_case="TCGA_44_6146"
@@ -355,6 +343,7 @@ assign(paste(target_case, "_methylation_HM450_processing", sep=""), methylation_
 #View(`TCGA-44-6146_methylation_HM450_processing`)
 #View(get(paste(target_case, "_methylation_HM450_processing", sep="")))
 ```
+
 ```
 #CMUHackathon_visualization_Genometrack_plottingcore.R
 ####＝＝＝＝＝＝＝＝＝＝Data Visualization＝＝＝＝＝＝＝＝＝＝

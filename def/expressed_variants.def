@@ -1,0 +1,74 @@
+Bootstrap: docker
+From: debian:stable-20211011-slim
+
+%post
+
+  apt update
+  apt-get install -y dialog=1.3-20201126-1
+  # Local related configuration
+  apt-get install -y locales
+  echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+  locale-gen
+  update-locale "LANG=en_US.UTF-8"
+
+  # Utilities needed during this build
+  apt-get install -y wget=1.21-1+deb11u1
+  apt-get install -y zip=3.0-12
+  apt-get install -y perl=5.32.1-4+deb11u2
+
+  #R
+  apt-get install -y r-base=4.0.4-1
+  apt-get install -y libcurl4-openssl-dev=7.74.0-1.3+deb11u1
+  apt-get install -y libssl-dev=1.1.1k-1+deb11u1
+
+  #BiocManger for R_4.0.4 (Bioconductor Version 3.12 (BiocManager 1.30.16), per BiocManager::version()):
+  Rscript -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/BiocManager/BiocManager_1.30.15.tar.gz")'
+
+  ##Pathway Enrichment: rWikiPathways
+  apt-get install -y r-bioc-rwikipathways=1.10.0+dfsg-1
+
+  #data.table
+  Rscript -e 'BiocManager::install("data.table")'
+  
+  ##Tidyr
+  Rscript -e 'BiocManager::install("tidyr")'
+
+  ##ggplot2
+  Rscript -e 'BiocManager::install("ggplot2")'
+
+  ##gridExtra
+  Rscript -e 'BiocManager::install("gridExtra")'
+
+  ##ggradar
+  Rscript -e 'devtools::install_github("ricardo-bion/ggradar", dependencies = TRUE)'
+
+  ##ggpubr
+  apt-get install -y r-cran-ggpubr=0.4.0-1
+
+
+%runscript
+    echo "The following expression variants analysis tools have been installed in this container: "
+
+    echo
+    #spit out software versions
+
+    R --version | head -n 1
+    #spit out R package versions
+    echo -n "Bioconductor:"; Rscript -e 'BiocManager::version()' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g' ## Display the Bioconductor version (formatted)
+    echo -n "ggplot2:"; Rscript -e 'packageVersion("ggplot2")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "gridExtra:"; Rscript -e 'packageVersion("gridExtra")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "dplyr:"; Rscript -e 'packageVersion("dplyr")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "tidyr:"; Rscript -e 'packageVersion("tidyr")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "magrittr:"; Rscript -e 'packageVersion("magrittr")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "rWikiPathways:"; Rscript -e 'packageVersion("rWikiPathways")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "ggradar:"; Rscript -e 'packageVersion("ggradar")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "ggpubr:"; Rscript -e 'packageVersion("ggpubr")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+    echo -n "data.table:"; Rscript -e 'packageVersion("data.table")' | sed 's/\[1]//' | sed 's/‘//g' | sed 's/’//g'
+
+%labels
+    Author laitanawe@gmail.com
+    Version 0.1
+    Date 10mar2022
+
+%help
+    This definition file builds a singularity container for RNAseq analysis.

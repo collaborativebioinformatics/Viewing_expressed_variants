@@ -1,0 +1,8 @@
+﻿CHROM,POS,REF,ALT,GENE,Genotype,DP,FILTER,TUMOR,TISSUE,COSMIC_ID,FATHMM
+chr2,10802518,C,A,PDIA6,0/1,8,PASS,other_--_neoplasm,thyroid,COSV55352693,PATHOGENIC
+chr2,96269269,G,A,CIAO1,0/1,3,PASS,carcinoma_--_adenocarcinoma,lung,COSV51499371,PATHOGENIC
+chr3,141922051,G,A,ATP1B3,0/1,8,PASS,haematopoietic_neoplasm_--_acute_myeloid_leukaemia,haematopoietic_and_lymphoid_tissue,COSV53951707,PATHOGENIC
+chr8,17864667,C,T,FGL1,1/1,5,PASS,carcinoma_--_adenocarcinoma,lung,COSV67712996,PATHOGENIC
+chr13,33818196,C,T,RFC3,0/1,4,PASS,carcinoma_--_squamous_cell_carcinoma,upper_aerodigestive_tract,COSV66296617,PATHOGENIC
+chr16,23690035,C,T,PLK1,1/1,4,PASS,carcinoma_--_adenocarcinoma,lung,COSV55623104,PATHOGENIC
+chr16,87403158,A,G,MAP1LC3B,1/1,2,PASS,carcinoma_--_adenocarcinoma,prostate,COSV51784503,PATHOGENIC

@@ -135,27 +135,27 @@ for (i in 1:nrow(pathogenic_variants)) {
 ```
 
 ### (step 2) Data Cleaning for VCF Files or Tabulated Files as Input (Sara):<br/>
-**1.**<br/>
+**2.**<br/>
 ```
 (codes)
 ```
 
 ### (step 3) Focusing on Pathogenic Variants only (Sara & Varuna):<br/>
-**1.**<br/>
+**3.**<br/>
 ```
 (codes)
 ```
 
 ### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
-**1.**<br/>
+**4.**<br/>
 ```
 (codes)
 ```
-**2. Molecular mechanisms:**<br/>
+**5. Molecular mechanisms:**<br/>
 ```
 (codes)
 ```
-**3. Identification of druggable target:**<br/>
+**6. Identification of druggable target:**<br/>
 ```
 (codes)
 ```

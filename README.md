@@ -180,7 +180,7 @@ _PS. Two results short list for clinician<br/>_
 **6b. Visualization of genome tracks where variants located:**<br/>
 <details>
 <summary>
-- R Codes
+- Click to view the R Codes
 
 ```
 #CMUHackathon_visualization_Genometrack_datapreparing.R
@@ -356,7 +356,7 @@ assign(paste(target_case, "_methylation_HM450_processing", sep=""), methylation_
 </details>
 <details>
 <summary>
-- R Codes  
+- Click to view the R Codes  
   
 ```
 #CMUHackathon_visualization_Genometrack_plottingcore.R
@@ -511,18 +511,16 @@ for(count00 in seq(1,nrow(temp_variants_filtered),1)){
 </details>  
 <details>
   <summary>
-    - Visualization of the genome tracks:
+    - Click to view the visualization of the genome tracks:
   </summary>
-  
+  <br/>
 Figure legends: In each figure there are 7 tracks, the 1st track shows the gene region (the one where the target variants located); the 2nd track shows the observed structure variants (TE insertion) in tumor; the 3rd track shows the observed structure variants (TE insertion) in paired-solid-normal; the 4th track shows the ATACseq signal in tumor; the 5th track shows the methylation signals in tumor; the 6th track shows the methylation signals in paired-solid-normal; the 7th track shows the annotations where CTCF binding sites located.<br/>
   <br/>
   - Visualization for the gene where variants located - DHTKD1 :<br/>
   <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_DHTKD1_Epigenetic_plotting.png?raw=true"><br/>
   <br/>
-  <br/>
   - Visualization for the gene where variants located - MCM10 :<br/>
   <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_MCM10_Epigenetic_plotting.png?raw=true"><br/>
-  <br/>
   <br/>
   - Visualization for the gene where variants located - SP6NL :<br/>
    <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_USP6NL_Epigenetic_plotting.png?raw=true"><br/>

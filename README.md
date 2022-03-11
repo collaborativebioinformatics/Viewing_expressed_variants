@@ -1,7 +1,7 @@
-# Viewing_expressed_variants
+# ✨Viewing_expressed_variants✨
 
 
-## Contributors
+## Contributors🤝🏻
 -  Kevin Elaba, Ankita Murmu, Rajarshi Mondal, Anukrati Nigam, ChunHsuan LO (Jason) - **Sysadmin**
 -  Ahmad Khleifat, Olaitan I. Awe, Varuna Chander - **Tech support**
 -  Sara Carioscia, Yejie Yun - **Writer**
@@ -23,7 +23,7 @@ The advancements in next-generation sequencing revolutionized the field of genon
 ![](pictures/idea_outlines_00.png)
 
 
-## Example Data
+## Example Data 📝
 #### Option 1: Filtered .vcf files from github  <br/>
 _(Provided by: https://github.com/collaborativebioinformatics/expression_and_SNPs_to_clinic)_  <br/>
 -  testSample.cancer.tab <br/>
@@ -38,7 +38,7 @@ _(Provided by: https://portal.gdc.cancer.gov/)_  <br/>
 -- https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22content%22%3A%7B%22field%22%3A%22cases.case_id%22%2C%22value%22%3A%5B%220c0b610e-fe4c-406d-a5ed-5cc3b11dabf5%22%5D%7D%2C%22op%22%3A%22in%22%7D%5D%7D&searchTableTab=files
 
 
-## Installation
+## Installation 🛠️
 **1.** Installing the Git Repository as a Package
 ```
 devtools::install_github("collaborativebioinformatics/Viewing_expressed_variants")
@@ -82,7 +82,7 @@ singularity exec expressed_variants.sif Rscript <path_to_script>
 ```
 
 
-## Methods
+## Methods ✍🏻
 
 ### Inputs:
 _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam file_

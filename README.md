@@ -77,7 +77,7 @@ singularity run expressed_variants.sif
 
 To run specific R packages by using the container, do:
 ```
-singularity exec expressed_variants.sif Rscript <path_to_Rscript>
+singularity exec expressed_variants.sif Rscript <path_to_script>
 ```
 
 

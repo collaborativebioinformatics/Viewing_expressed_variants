@@ -623,7 +623,15 @@ Figure legends: In each figure there are 7 tracks, the 1st track shows the gene 
 <br/>
 
 ## Example Data Outputs & Results
-### 1. Figures & Tables:**<br/>
+### 1. Clinical report:**<br/>
+![](pictures/Report.png)
+  
+### 2. ChEMBL gene-drug interaction 
+ ![](pictures/ChEMBL.png) 
+ ![](pictures/DrugBank.png)
+ 
+### 3. Functional enrichment analysis
+  ![](pictures/gProfiler.png)
 
 ## References
 - GATK Best Practices https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows

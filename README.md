@@ -99,9 +99,8 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 
 ## Implementation (codes)
 
-### (step 1) Preparing the Sample Files & Data Cleaning for VCF Files or Tabulated Files as Input :<br/>
-<br/>
-```
+### (step 1) Preparing the Sample Files:<br/>
+****<br/>
 
 ## Hackathon
 library(data.table) # for data.table functions
@@ -135,15 +134,22 @@ for (i in 1:nrow(pathogenic_variants)) {
 
 ```
 
-### (step 3) Focusing on Pathogenic Variants only :<br/>
-<br/>
+### (step 2) Data Cleaning for VCF Files or Tabulated Files as Input (Sara):<br/>
+**2.**<br/>
+```
+(codes)
+```
+
+### (step 3) Focusing on Pathogenic Variants only (Sara & Varuna):<br/>
+**3.**<br/>
+
 ```
 (code)   
  
 ```
 
-### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes:<br/>
-<br/>
+### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Kevin,and Anukrati):<br/>
+**4a.**<br/>
 ```
 library(gprofiler2)
 # grabs from data output, check this path w group?

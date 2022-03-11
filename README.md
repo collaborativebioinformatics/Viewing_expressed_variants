@@ -525,7 +525,7 @@ Visualization for the gene where variants located - SP6NL<br/>
 <br/>
 
 ## Example Data Outputs & Results
-###1. Figures & Tables:**<br/>
+### 1. Figures & Tables:**<br/>
 
 ## References
 - Data:

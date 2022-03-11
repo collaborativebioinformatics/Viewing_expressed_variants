@@ -149,7 +149,7 @@ for (i in 1:nrow(pathogenic_variants)) {
  
 ```
 
-### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Jason, Kevin, Olaitan & Sara):<br/>
+### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Kevin,and Anukrati):<br/>
 **4a.**<br/>
 ```
 library(gprofiler2)
@@ -230,7 +230,7 @@ ggsave("../pictures/gene_GO_association.png")
 (codes)
 ```
 
-### (step 5) Results Integration and Visualization (Kevin):<br/>
+### (step 5) Results Integration and Visualization (Kevin & Anukrati):<br/>
 _PS. Two results short list for clinician<br/>_
 
 **5a. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>

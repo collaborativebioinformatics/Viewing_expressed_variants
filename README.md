@@ -185,7 +185,7 @@ _PS. Two results short list for clinician<br/>_
 #CMUHackathon_visualization_Genometrack_datapreparing.R
 ```
 
-/<summary>
+</summary>
   
 ```
 ####＝＝＝＝＝＝＝＝＝＝Environments setting＝＝＝＝＝＝＝＝＝＝
@@ -351,12 +351,17 @@ assign(paste(target_case, "_methylation_HM450_processing", sep=""), methylation_
 #View(`TCGA-44-6146_methylation_HM450_processing`)
 #View(get(paste(target_case, "_methylation_HM450_processing", sep="")))
 ```
-  
-</details>
 
+</details>
+<details>
+<summary>
+  
 ```
 #CMUHackathon_visualization_Genometrack_plottingcore.R
 ```
+  
+</summary>  
+  
 ```
 ####＝＝＝＝＝＝＝＝＝＝Data Visualization＝＝＝＝＝＝＝＝＝＝
 ##===(Plotting core)===
@@ -501,20 +506,7 @@ for(count00 in seq(1,nrow(temp_variants_filtered),1)){
 }
 ```
   
-<details>
-<summary>
-
-```
-Code in summary
-```
-
-</summary>
-
-```
-Code in details
-```
-
-</details>
+</details>  
 
 ## Example Data Outputs & Results
 **1. Figures & Tables:**<br/>

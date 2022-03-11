@@ -86,7 +86,7 @@ singularity exec expressed_variants.sif Rscript <path_to_script>
 
 ### Inputs:
 _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam file_
-1. Expressed variants (VCF files from RNA-seq data) -> NEED TO VISUALIZE THE COLUMNS IN THE FIELDS.
+1. Expressed variants (VCF files from RNA-seq data) 
 
 ### Outputs:
 1. Summary statistics of expressed variants and pathogenic variants.

@@ -178,10 +178,6 @@ _PS. Two results short list for clinician<br/>_
 (codes)
 ```
 **6b. Visualization of genome tracks where variants located:**<br/>
-<details>
-  <summary>
-    CMUHackathon_visualization_Genometrack_datapreparing
-  </summary> 
 ```
 #CMUHackathon_visualization_Genometrack_datapreparing.R
 ####＝＝＝＝＝＝＝＝＝＝Environments setting＝＝＝＝＝＝＝＝＝＝
@@ -492,7 +488,6 @@ for(count00 in seq(1,nrow(temp_variants_filtered),1)){
   #get(paste(target_case, "_", visualizing_gene, "_genomeTracksGrapgic_Epigenetic_plotting", sep=""))
 }
 ```
-</details>
   
 ## Example Data Outputs & Results
 **1. Figures & Tables:**<br/>

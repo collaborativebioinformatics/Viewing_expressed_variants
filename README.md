@@ -633,8 +633,9 @@ Figure legends: In each figure there are 7 tracks, the 1st track shows the gene 
 ### 3. Functional enrichment analysis
   ![](pictures/gProfiler.png)
   
-### 4. Variant distribution 
+### 4. Variant analysis 
   ![](pictures/image.png)
+  ![](pictures/var.png)
   
 ### 5. Epigenetic profile of mutant genes
   ![](pictures/TCGA_44_6146_CAMK1D_Epigenetic_plotting.png)

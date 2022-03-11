@@ -507,6 +507,13 @@ for(count00 in seq(1,nrow(temp_variants_filtered),1)){
 ```
   
 </details>  
+<details>
+  <summary>
+    Visualizad tracks:
+  </summary>
+  <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_DHTKD1_Epigenetic_plotting.png?raw=true">
+Visualization for the gene where variants located - DHTKD1
+</details>
 
 ## Example Data Outputs & Results
 **1. Figures & Tables:**<br/>

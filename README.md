@@ -100,7 +100,7 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 ## Implementation (codes)
 
 ### (step 1) Preparing the Sample Files:<br/>
-**Data manipulation**<br/>
+**1. Data manipulation:**<br/>
 ```
 ## Hackathon
 library(data.table) # for data.table functions
@@ -234,11 +234,11 @@ ggsave("../pictures/gene_GO_association.png")
 ### (step 5) Results Integration and Visualization:<br/>
 _PS. Two results short list for clinician<br/>_
 
-** Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
+**5a. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
 ```
 (codes)
 ```
-** Broader list for researchers:**<br/>
+**5b. Broader list for researchers:**<br/>
 ```
 (codes)
 ```

@@ -519,8 +519,10 @@ Figure legends: In each figure there are 7 tracks, the 1st track shows the gene 
   - Visualization for the gene where variants located - DHTKD1 :<br/>
   <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_DHTKD1_Epigenetic_plotting.png?raw=true"><br/>
   <br/>
+  <br/>
   - Visualization for the gene where variants located - MCM10 :<br/>
   <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_MCM10_Epigenetic_plotting.png?raw=true"><br/>
+  <br/>
   <br/>
   - Visualization for the gene where variants located - SP6NL :<br/>
    <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_USP6NL_Epigenetic_plotting.png?raw=true"><br/>

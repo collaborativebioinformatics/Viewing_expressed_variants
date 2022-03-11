@@ -101,6 +101,7 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 ### (step 1) Preparing the Sample Files:<br/>
 **1.**<br/>
 ```
+
 ## Hackathon
 library(data.table) # for data.table functions
 library(dplyr) # for pipe, filter, str_detect
@@ -118,6 +119,18 @@ pathogenic_variants <- variants_dt %>%
   filter_all(any_vars(str_detect(., pattern = "PATHOGENIC")))
 # write it back as a csv
 write.csv(pathogenic_variants, "~/Downloads/pathogenic_variants.csv", row.names = FALSE, quote = FALSE)
+
+# Format is `|GENE=gene_name|`. Try to grab the content between GENE= and |
+for (i in 1:nrow(pathogenic_variants)) {
+  # go through each row of the pathogenic variants
+  row <- pathogenic_variants[i,]
+  # grab the content after GENE=
+  gene <- str_match(row, "GENE=\\s*(.*?)\\s*;")
+  # other rows are grabbed; we want those that are not NA
+  gene <- gene[,2][!is.na(gene[,2])]
+  # assign the gene to the column in pathogenic_variants
+  pathogenic_variants$genes[i] <- gene
+}
 
 ```
 

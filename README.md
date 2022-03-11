@@ -521,11 +521,12 @@ Visualization for the gene where variants located - MCM10<br/>
 Visualization for the gene where variants located - SP6NL<br/>
 </details>
 
+<br/>
+<br/>
+
 ## Example Data Outputs & Results
 **1. Figures & Tables:**<br/>
 <img width="323" alt="Screen Shot " src="https://XXX.png">
-For use by https://github.com/collaborativebioinformatics/Viewing_expressed_variants
-
 
 ## References
 - Data:

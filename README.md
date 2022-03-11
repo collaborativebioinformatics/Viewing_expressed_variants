@@ -99,8 +99,8 @@ _VCF file (sample-> online data base - 1000 genome, TCGA, or etc.) + RNAseq bam 
 
 ## Implementation (codes)
 
-### (step 1) Preparing the Sample Files:<br/>
-****<br/>
+### (step 1) Preparing the Sample Files & Data Cleaning for VCF Files or Tabulated Files as Input :<br/>
+<br/>
 ```
 
 ## Hackathon
@@ -135,22 +135,15 @@ for (i in 1:nrow(pathogenic_variants)) {
 
 ```
 
-### (step 2) Data Cleaning for VCF Files or Tabulated Files as Input (Sara):<br/>
-**2.**<br/>
+### (step 3) Focusing on Pathogenic Variants only :<br/>
+<br/>
 ```
-
-(codes)
-```
-
-### (step 3) Focusing on Pathogenic Variants only (Sara & Varuna):<br/>
-**3.**<br/>
-```
-(codes)   
+(code)   
  
 ```
 
-### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes (Yejie, Varuna, Kevin,and Anukrati):<br/>
-**4a.**<br/>
+### (step 4) Gene Ontology and Pathway Analysis for Pathogenic Variants & Genes:<br/>
+<br/>
 ```
 library(gprofiler2)
 # grabs from data output, check this path w group?
@@ -221,29 +214,29 @@ GO_association %>% ggplot2::ggplot(aes(x = term_name, y = geneName, fill =term_n
   labs(title = "Genes and Gene Ontology association",x = "Gene Ontology", y = "Genes")
 ggsave("../pictures/gene_GO_association.png")
 ```
-**4b. Molecular mechanisms:**<br/>
+** Molecular mechanisms:**<br/>
 ```
-(codes)
+(code)
 ```
-**4c. Identification of druggable target:**<br/>
+** Identification of druggable target:**<br/>
 ```
-(codes)
+(code)
 ```
 
-### (step 5) Results Integration and Visualization (Kevin & Anukrati):<br/>
+### (step 5) Results Integration and Visualization:<br/>
 _PS. Two results short list for clinician<br/>_
 
-**5a. Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
+** Showing Top 5 important variants/ associated pathways for clinicians:**<br/>
 ```
 (codes)
 ```
-**5b. Broader list for researchers:**<br/>
+** Broader list for researchers:**<br/>
 ```
 (codes)
 ```
 
-### (step 6) Visualization (Ankita, Jason & Anukrati):<br/>
-**6a. Visualization of facts about expressed variants: what genes/pathways it affects:**<br/>
+### (step 6) Visualization :<br/>
+**Visualization of facts about expressed variants: what genes/pathways it affects:**<br/>
 ```
 # Read in df
 df <- read.csv("~/pathogenic_variants.csv", header = T)

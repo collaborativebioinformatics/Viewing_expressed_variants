@@ -180,7 +180,7 @@ _PS. Two results short list for clinician<br/>_
 **6b. Visualization of genome tracks where variants located:**<br/>
 <details>
 <summary>
-R Codes
+- R Codes
 
 ```
 #CMUHackathon_visualization_Genometrack_datapreparing.R
@@ -356,7 +356,7 @@ assign(paste(target_case, "_methylation_HM450_processing", sep=""), methylation_
 </details>
 <details>
 <summary>
-R Codes  
+- R Codes  
   
 ```
 #CMUHackathon_visualization_Genometrack_plottingcore.R
@@ -511,14 +511,14 @@ for(count00 in seq(1,nrow(temp_variants_filtered),1)){
 </details>  
 <details>
   <summary>
-    Visualization of the genome tracks:
+    - Visualization of the genome tracks:
   </summary>
   <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_DHTKD1_Epigenetic_plotting.png?raw=true"><br/>
-Visualization for the gene where variants located - DHTKD1
+Visualization for the gene where variants located - DHTKD1<br/>
   <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_MCM10_Epigenetic_plotting.png?raw=true"><br/>
-Visualization for the gene where variants located - MCM10
+Visualization for the gene where variants located - MCM10<br/>
    <img width="323" alt="Screen Shot " src="https://github.com/collaborativebioinformatics/Viewing_expressed_variants/blob/main/Visualization_of_genome_tracks_where_variants_located/output/TCGA_44_6146_USP6NL_Epigenetic_plotting.png?raw=true"><br/>
-Visualization for the gene where variants located - SP6NL
+Visualization for the gene where variants located - SP6NL<br/>
 </details>
 
 ## Example Data Outputs & Results

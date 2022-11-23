@@ -1,9 +1,11 @@
+#!/bin/R
 #CMUHackathon_visualization_Genometrack_datapreparing.R
+
 ####＝＝＝＝＝＝＝＝＝＝Environments setting＝＝＝＝＝＝＝＝＝＝
 target_case="TCGA_44_6146"
 
 library("icesTAF")
-server="/Users/chunhsuanlojason/Desktop/CMU_Libraries_Hackathon" 
+server="/Users/chunhsuanlojason/Desktop/CMU_Libraries_Hackathon"
 dir_input_workingspace=paste(server, "workingspace", sep="/")
 dir_input_epigenetics=paste(server, "TCGA_raw_data", sep="/")
 dir_temp=paste(server, "temp_CMUHackathon_visualization_Genometrack", sep="/")
@@ -120,7 +122,7 @@ methylation_HM450_processing <- function(caseID){
   filename_Tumor=paste(caseID, "_Tumor_HumanMethylation450array",".txt",sep="")
   targeted_file_Tumor_path <- paste(dir_input_epigenetics, filename_Tumor, sep="/")
   targeted_case_HM450_tumor <- read.table(targeted_file_Tumor_path, sep = '\t', header= TRUE, na = "NA", stringsAsFactors = F)
-
+  
   filename_Solidnormal=paste(caseID, "_Solidnormal_HumanMethylation450array",".txt",sep="")
   targeted_file_Solidnormal_path <- paste(dir_input_epigenetics, filename_Solidnormal, sep="/")
   targeted_case_HM450_solidnormal <- read.table(targeted_file_Solidnormal_path, sep = '\t', header= TRUE, na = "NA", stringsAsFactors = F)
@@ -140,14 +142,14 @@ methylation_HM450_processing <- function(caseID){
   
   
   targeted_case_HM450_tumor <- mutate(targeted_case_HM450_tumor, M_value=as.numeric(log2((Beta_value+0.0001)/((1-Beta_value)+0.0001))))
-  targeted_case_HM450_tumor_d_Mvalue <- density(na.omit(targeted_case_HM450_tumor$M_value)) 
+  targeted_case_HM450_tumor_d_Mvalue <- density(na.omit(targeted_case_HM450_tumor$M_value))
   png(filename=paste(dir_temp,"/", caseID, "_HM450_tumor_Mvalue.png", sep=""))
   plot.new()
   plot(targeted_case_HM450_tumor_d_Mvalue)
   dev.off()
   
   targeted_case_HM450_solidnormal <- mutate(targeted_case_HM450_solidnormal, M_value=as.numeric(log2((Beta_value+0.0001)/((1-Beta_value)+0.0001))))
-  targeted_case_HM450_solidnormal_d_Mvalue <- density(na.omit(targeted_case_HM450_solidnormal$M_value)) 
+  targeted_case_HM450_solidnormal_d_Mvalue <- density(na.omit(targeted_case_HM450_solidnormal$M_value))
   png(filename=paste(dir_temp,"/", caseID, "_HM450_solidnormal_Mvalue.png", sep=""))
   plot.new()
   plot(targeted_case_HM450_solidnormal_d_Mvalue)
@@ -161,6 +163,3 @@ methylation_HM450_processing <- function(caseID){
 assign(paste(target_case, "_methylation_HM450_processing", sep=""), methylation_HM450_processing(target_case))
 #View(`TCGA-44-6146_methylation_HM450_processing`)
 #View(get(paste(target_case, "_methylation_HM450_processing", sep="")))
-
-
-

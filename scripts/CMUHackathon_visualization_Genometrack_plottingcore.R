@@ -1,8 +1,10 @@
+#!/bin/R
 #CMUHackathon_visualization_Genometrack_plottingcore.R
+
 ####＝＝＝＝＝＝＝＝＝＝Data Visualization＝＝＝＝＝＝＝＝＝＝
 ##===(Plotting core)===
-library("Rsamtools") 
-library("GenomicAlignments") 
+library("Rsamtools")
+library("GenomicAlignments")
 library("rtracklayer")
 library("icesTAF")
 library("magrittr")
@@ -14,7 +16,7 @@ library("VariantAnnotation")
 library("AnnotationHub")
 ah <- AnnotationHub()
 query(ah, c("Homo sapien", "CTCF", "hepG"))
-id <- names(query(ah, "wgEncodeUwTfbsHepg2CtcfStdPkRep2.narrowPeak.gz")) 
+id <- names(query(ah, "wgEncodeUwTfbsHepg2CtcfStdPkRep2.narrowPeak.gz"))
 Hepg2Ctcf.gr <- ah[[tail(id, 1)]]
 
 library("rtracklayer")
@@ -113,7 +115,7 @@ genomeTracksGrapgic_targetlocations <- function(target_case_in, temp_variants_fi
     #Plotting_core
     png(filename=paste(dir_output, "/", target_case_in, "_", target_gene_GRanges$symbol, "_Epigenetic_plotting.png", sep=""))
     plot.new()
-    #plotTracks(list(itrack, gtrack, atrack, grtrack_Tumor_TE, grtrack_Blood_TE, alTrack_RNAseq_tumor, dtrack_Tumor_ATAC_open, dtrack_tumor_methylation, dtrack_solidnormal_methylation, additionaltrack), from=target_START, to=target_END) #(with_RNAseq_track) 
+    #plotTracks(list(itrack, gtrack, atrack, grtrack_Tumor_TE, grtrack_Blood_TE, alTrack_RNAseq_tumor, dtrack_Tumor_ATAC_open, dtrack_tumor_methylation, dtrack_solidnormal_methylation, additionaltrack), from=target_START, to=target_END) #(with_RNAseq_track)
     plotTracks(list(itrack, gtrack, atrack, grtrack_Tumor_TE, grtrack_Blood_TE, dtrack_Tumor_ATAC_open, dtrack_tumor_methylation, dtrack_solidnormal_methylation, additionaltrack), from=target_START, to=target_END)
     dev.off()
   }else{
@@ -135,7 +137,7 @@ for(count00 in seq(1,nrow(temp_variants_filtered),1)){
   temp_targetgene=strsplit(info(temp_variants_filtered)$CSQ[[count00]][1], "\\|")[[1]][4]
   print(temp_targetgene)
   if(temp_targetgene != ""){
-    assign(paste(target_case, "_", temp_targetgene, "_genomeTracksGrapgic_targetlocations", sep=""), genomeTracksGrapgic_targetlocations(target_case, temp_variants_filtered, count00, temp_targetgene))
+    assign(paste(target_case, "_", temp_targetgene, "_genomeTracksGraphic_targetlocations", sep=""), genomeTracksGrapgic_targetlocations(target_case, temp_variants_filtered, count00, temp_targetgene))
     print("plotting!!!")
   }
   #get(paste(target_case, "_", visualizing_gene, "_genomeTracksGrapgic_Epigenetic_plotting", sep=""))
